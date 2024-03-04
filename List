@@ -1,0 +1,13 @@
+string selectedCategory = comboBox1.SelectedItem?.ToString();
+if (!string.IsNullOrEmpty(selectedCategory))
+{
+    // Kategóriába tartozó termékek lekérése
+    var selectedProducts = books_list.Where(t => t.kategoria.Equals(selectedCategory)).ToList();
+
+    // Az eredmények megjelenítése (például ListBox-ban)
+    listBox1.Items.Clear(); // Törölje a korábbi elemeket
+
+    foreach (var termek in selectedProducts)
+    {
+        listBox1.Items.Add($"Cím: {termek.konyv}, Ár: {termek.ar}, Darabszám: {termek.db}");
+    }
