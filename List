@@ -11,3 +11,4 @@ if (!string.IsNullOrEmpty(selectedCategory))
     {
         listBox1.Items.Add($"Cím: {termek.konyv}, Ár: {termek.ar}, Darabszám: {termek.db}");
     }
+}
