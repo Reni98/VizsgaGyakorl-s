@@ -1,0 +1,4 @@
+Olvassa be a fájlt. 
+Számolja meg, hogy egy személy mennyit fizet, ha igen van valamelyik személynél az azt jelenti, hogy családi kedvezményt igénybe vesz. 
+Tehát a végösszegből lejön a 20% kedvezmény. 
+Majd rendezze növekvő sorrendbe az összegek alapján.
